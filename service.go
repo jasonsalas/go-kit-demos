@@ -21,7 +21,7 @@ type StringService interface {
 // stringService is a concrete implementation of StringService
 type stringService struct{}
 
-/* the next two methods satisfy the internal StringService interface */
+/* methods to satisfy the StringService interface */
 func (stringService) Uppercase(s string) (string, error) {
 	if s == "" {
 		return "", ErrEmptyString
